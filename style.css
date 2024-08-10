@@ -1,0 +1,285 @@
+/*
+ * __        __          _                  ____  _         _       
+ * \ \      / /_ _ _   _| |__   __ _ _ __  / ___|| |_ _   _| | ___  
+ *  \ \ /\ / / _` | | | | '_ \ / _` | '__| \___ \| __| | | | |/ _ \ 
+ *   \ V  V / (_| | |_| | |_) | (_| | |     ___) | |_| |_| | |  __/ 
+ *    \_/\_/ \__,_|\__, |_.__/ \__,_|_|    |____/ \__|\__, |_|\___| 
+ *                 |___/                              |___/         
+ *  
+ * by Stephan Raabe (2023) 
+ * ----------------------------------------------------- 
+*/
+
+/* @import 'style-light.css'; */
+@define-color backgroundlight #FFFFFF;
+@define-color backgrounddark #FFFFFF;
+@define-color workspacesbackground1 #FFFFFF;
+@define-color workspacesbackground2 #CCCCCC;
+@define-color bordercolor #FFFFFF;
+@define-color textcolor1 #000000;
+@define-color textcolor2 #000000;
+@define-color textcolor3 #000000;
+@define-color iconcolor #FFFFFF;
+/* -----------------------------------------------------
+ * General 
+ * ----------------------------------------------------- */
+
+* {
+    font-family: FontAwesome, Victor Mono Nerd Font;
+    border: none;
+    border-radius: 0px;
+}
+
+window#waybar {
+    background: transparent;
+    background-color: transparent;
+    border-bottom: 0px solid #ffffff;
+    /* color: #FFFFFF; */
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+/* -----------------------------------------------------
+ * Workspaces 
+ * ----------------------------------------------------- */
+
+#workspaces {
+    background: @workspacesbackground1;
+    margin: 5px 1px 6px 1px;
+    padding: 0px 1px;
+    border-radius: 15px;
+    border: 0px;
+    font-weight: bold;
+    font-style: normal;
+    opacity: 0.8;
+    font-size: 12px;
+    color: @textcolor1;
+}
+
+#workspaces button {
+    padding: 0px 5px;
+    margin: 4px 3px;
+    border-radius: 15px;
+    border: 0px;
+    color: @textcolor1;
+    background-color: @workspacesbackground2;
+    transition: all 0.3s ease-in-out;
+    opacity: 0.4;
+}
+
+#workspaces button.active {
+    color: @textcolor1;
+    background: @workspacesbackground2;
+    border-radius: 15px;
+    min-width: 40px;
+    transition: all 0.3s ease-in-out;
+    opacity: 1.0;
+}
+
+#workspaces button:hover {
+    color: @textcolor1;
+    background: @workspacesbackground2;
+    border-radius: 15px;
+    opacity: 0.7;
+}
+
+/* -----------------------------------------------------
+ * Window
+ * ----------------------------------------------------- */
+
+#window {
+    background: @backgroundlight;
+    margin: 8px 15px 8px 0px;
+    padding: 2px 10px 0px 10px;
+    border-radius: 12px;
+    color: @textcolor2;
+    font-size: 16px;
+    font-weight: normal;
+    opacity: 0.8;
+}
+
+window#waybar.empty #window {
+    background-color: transparent;
+}
+
+#custom-chatgpt,
+#custom-windowsvm,
+#custom-kalivm,
+#custom-applauncher,
+#custom-tools,
+#custom-waybarthemes {
+    margin-right: 23px;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0.8;
+    color: @iconcolor;
+}
+
+#custom-chatgpt {
+    margin-right: 12px;
+    background-image: url("/home/akula/Documents/Assets/openai.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding-right: 16px;
+    opacity: 0.8;
+}
+
+#custom-windowsvm {
+    background-image: url("/home/akula/Documents/Assets/windows.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding-right: 16px;
+    opacity: 0.8;
+}
+
+#custom-kalivm {
+    background-image: url("/home/akula/Documents/Assets/kali.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding-right: 16px;
+    opacity: 0.8;
+}
+
+#custom-applauncher {
+    margin-left: 25px;
+    font-size: 45px;
+    background-image: url("/home/akula/Documents/Assets/Tf141.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding-right: 16px;
+    opacity: 0.8;
+}
+
+
+/* -----------------------------------------------------
+ * Custom Exit
+ * ----------------------------------------------------- */
+
+#custom-exit {
+    margin: 0px 20px 0px 0px;
+    padding: 0px;
+    font-size: 20px;
+    color: @iconcolor;
+    opacity: 0.8;
+}
+
+/* -----------------------------------------------------
+ * Clock
+ * ----------------------------------------------------- */
+
+#clock {
+    background-color: @backgrounddark;
+    font-size: 16px;
+    color: @textcolor1;
+    border-radius: 15px;
+    padding: 1px 10px 0px 10px;
+    margin: 8px 15px 8px 0px;
+    opacity: 0.8;
+    border: 3px solid @bordercolor;
+}
+
+/* -----------------------------------------------------
+ * Pulseaudio
+ * ----------------------------------------------------- */
+
+#pulseaudio {
+    background-color: @backgroundlight;
+    font-size: 16px;
+    color: @textcolor2;
+    border-radius: 15px;
+    padding: 2px 10px 0px 10px;
+    margin: 8px 10px 8px 10px;
+    opacity: 0.8;
+}
+
+#pulseaudio.muted {
+    background-color: @backgrounddark;
+    color: @textcolor1;
+}
+
+/* -----------------------------------------------------
+ * Network
+ * ----------------------------------------------------- */
+
+#network {
+    background-color: @backgroundlight;
+    font-size: 16px;
+    color: @textcolor2;
+    border-radius: 15px;
+    padding: 2px 10px 0px 10px;
+    margin: 8px 10px 8px 0px;
+    opacity: 0.8;
+}
+
+#network.ethernet {
+    background-color: @backgroundlight;
+    color: @textcolor2;
+}
+
+#network.wifi {
+    background-color: @backgroundlight;
+    color: @textcolor2;
+}
+
+/* -----------------------------------------------------
+ * Bluetooth
+ * ----------------------------------------------------- */
+
+#bluetooth,
+#bluetooth.on,
+#bluetooth.connected {
+    background-color: @backgroundlight;
+    font-size: 16px;
+    color: @textcolor2;
+    border-radius: 15px;
+    padding: 2px 10px 0px 10px;
+    margin: 8px 15px 8px 0px;
+    opacity: 0.8;
+}
+
+#bluetooth.off {
+    background-color: transparent;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* -----------------------------------------------------
+ * Battery
+ * ----------------------------------------------------- */
+
+#battery {
+    background-color: @backgroundlight;
+    font-size: 16px;
+    color: @textcolor2;
+    border-radius: 15px;
+    padding: 2px 15px 0px 10px;
+    margin: 8px 15px 8px 0px;
+    opacity: 0.8;
+}
+
+#battery.charging,
+#battery.plugged {
+    color: @textcolor2;
+    background-color: @backgroundlight;
+}
+
+@keyframes blink {
+    to {
+        background-color: @backgroundlight;
+        color: @textcolor2;
+    }
+}
+
+#battery.critical:not(.charging) {
+    background-color: #f53c3c;
+    color: @textcolor3;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
