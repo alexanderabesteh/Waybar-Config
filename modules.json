@@ -34,14 +34,14 @@
     // Windows VM
     "custom/windowsvm": {
         "format": " ",
-        "on-click": "bash ~/Documents/Programming/Bash/launchwin11.sh",
+        "on-click": "bash ~/Documents/Programming/Bash/Scripts/launchwin11.sh",
         "tooltip-format": "Windows 11"
     },
     
     // Kali VM
     "custom/kalivm": {
         "format": " ",
-        "on-click": "bash ~/Documents/Programming/Bash/launchkali.sh",
+        "on-click": "bash ~/Documents/Programming/Bash/Scripts/launchkali.sh",
         "tooltip-format": "Kali Linux"
     },
     

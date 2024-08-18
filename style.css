@@ -117,7 +117,7 @@ window#waybar.empty #window {
 
 #custom-chatgpt {
     margin-right: 12px;
-    background-image: url("~/Documents/Assets/openai.svg");
+    background-image: url("/home/akula/Documents/Assets/Images/openai.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -126,7 +126,7 @@ window#waybar.empty #window {
 }
 
 #custom-windowsvm {
-    background-image: url("~/Documents/Assets/windows.svg");
+    background-image: url("/home/akula/Documents/Assets/Images/windows.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -135,7 +135,7 @@ window#waybar.empty #window {
 }
 
 #custom-kalivm {
-    background-image: url("~/Documents/Assets/kali.svg");
+    background-image: url("/home/akula/Documents/Assets/Images/kali.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -146,7 +146,7 @@ window#waybar.empty #window {
 #custom-applauncher {
     margin-left: 25px;
     font-size: 45px;
-    background-image: url("~/Documents/Assets/Tf141.svg");
+    background-image: url("/home/akula/Documents/Assets/Images/Tf141.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
