@@ -4,8 +4,6 @@
 // | |  | | (_) | (_| | |_| | |  __/\__ \ 
 // |_|  |_|\___/ \__,_|\__,_|_|\___||___/ 
 //                                        
-//  
-// by Stephan Raabe (2023) 
 // ----------------------------------------------------- 
 //
 {
@@ -40,7 +38,7 @@
         "tooltip-format": "Windows 11"
     },
     
-  // Kali VM
+    // Kali VM
     "custom/kalivm": {
         "format": " ",
         "on-click": "bash ~/Documents/Programming/Bash/launchkali.sh",
@@ -83,7 +81,7 @@
         "tooltip-format-ethernet": " {ifname}\nIP: {ipaddr}\n up: {bandwidthUpBits} down: {bandwidthDownBits}",
         "tooltip-format-disconnected": "Disconnected",
         "max-length": 50,
-        "on-click": "nmtui"
+        //"on-click": "nmtui"
     },
 
     // Battery
@@ -97,8 +95,6 @@
         "format-charging": "  {capacity}%",
         "format-plugged": "  {capacity}%",
         "format-alt": "{icon}  {time}",
-        // "format-good": "", // An empty format will hide the module
-        // "format-full": "",
         "format-icons": [" ", " ", " ", " ", " "]
     },
 

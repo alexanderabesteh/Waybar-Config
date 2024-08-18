@@ -6,11 +6,10 @@
  *    \_/\_/ \__,_|\__, |_.__/ \__,_|_|    |____/ \__|\__, |_|\___| 
  *                 |___/                              |___/         
  *  
- * by Stephan Raabe (2023) 
  * ----------------------------------------------------- 
 */
 
-/* @import 'style-light.css'; */
+/*Color Styles*/
 @define-color backgroundlight #FFFFFF;
 @define-color backgrounddark #FFFFFF;
 @define-color workspacesbackground1 #FFFFFF;
@@ -20,6 +19,7 @@
 @define-color textcolor2 #000000;
 @define-color textcolor3 #000000;
 @define-color iconcolor #FFFFFF;
+
 /* -----------------------------------------------------
  * General 
  * ----------------------------------------------------- */
@@ -34,7 +34,6 @@ window#waybar {
     background: transparent;
     background-color: transparent;
     border-bottom: 0px solid #ffffff;
-    /* color: #FFFFFF; */
     transition-property: background-color;
     transition-duration: .5s;
 }
@@ -107,6 +106,7 @@ window#waybar.empty #window {
 #custom-kalivm,
 #custom-applauncher,
 #custom-tools,
+
 #custom-waybarthemes {
     margin-right: 23px;
     font-size: 20px;
@@ -117,7 +117,7 @@ window#waybar.empty #window {
 
 #custom-chatgpt {
     margin-right: 12px;
-    background-image: url("/home/akula/Documents/Assets/openai.svg");
+    background-image: url("~/Documents/Assets/openai.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -126,7 +126,7 @@ window#waybar.empty #window {
 }
 
 #custom-windowsvm {
-    background-image: url("/home/akula/Documents/Assets/windows.svg");
+    background-image: url("~/Documents/Assets/windows.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -135,7 +135,7 @@ window#waybar.empty #window {
 }
 
 #custom-kalivm {
-    background-image: url("/home/akula/Documents/Assets/kali.svg");
+    background-image: url("~/Documents/Assets/kali.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -146,7 +146,7 @@ window#waybar.empty #window {
 #custom-applauncher {
     margin-left: 25px;
     font-size: 45px;
-    background-image: url("/home/akula/Documents/Assets/Tf141.svg");
+    background-image: url("~/Documents/Assets/Tf141.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
