@@ -37,7 +37,12 @@
         "on-click": "bash ~/Documents/Programming/Bash/Scripts/launchwin11.sh",
         "tooltip-format": "Windows 11"
     },
-    
+    // Windows VM
+    "custom/imacvm": {
+        "format": " ",
+        "on-click": "bash ~/Documents/Programming/Bash/Scripts/launchmac.sh",
+        "tooltip-format": "iMac Pro"
+    }, 
     // Kali VM
     "custom/kalivm": {
         "format": " ",
@@ -45,15 +50,6 @@
         "tooltip-format": "Kali Linux"
     },
     
-
-    // ChatGPT Launcher
-    "custom/chatgpt": {
-        "format": " ",
-        "on-click": "librewolf --new-window https://chat.openai.com",
-        "tooltip-format": "AI Support"
-    },
-
-
     // Power Menu
     "custom/exit": {
         "format": "",
