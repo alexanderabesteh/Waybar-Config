@@ -124,6 +124,7 @@ window#waybar.empty #window {
     opacity: 0.8;
 }
 
+/*
 #custom-imacvm {
     background-image: url("/home/akula/Documents/Assets/Images/apple.svg");
     background-repeat: no-repeat;
@@ -132,6 +133,7 @@ window#waybar.empty #window {
     padding-right: 16px;
     opacity: 0.8;
 }
+*/
 
 #custom-kalivm {
     background-image: url("/home/akula/Documents/Assets/Images/kali.svg");

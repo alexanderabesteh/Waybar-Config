@@ -37,12 +37,16 @@
         "on-click": "bash ~/Documents/Programming/Bash/Scripts/launchwin11.sh",
         "tooltip-format": "Windows 11"
     },
-    // Windows VM
+
+    /*
+    // iMac VM
     "custom/imacvm": {
         "format": " ",
         "on-click": "bash ~/Documents/Programming/Bash/Scripts/launchmac.sh",
         "tooltip-format": "iMac Pro"
     }, 
+    */
+
     // Kali VM
     "custom/kalivm": {
         "format": " ",
